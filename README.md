@@ -28,3 +28,14 @@ webhook test
 09/06/2021-->Wednesday
 05/07/2021 ---> Monday is today
 06/07/2021 ---> Today is Tuesday
+HelloWorld Servlet example with corresponding Dockerfile!
+sample
+03/22/2021-->Monday
+03/23/2021
+15/04/2021 -->Thursday
+
+ develop-test
+
+09/07/2021
+03/07/2021 --> Friday today is
+ develop
