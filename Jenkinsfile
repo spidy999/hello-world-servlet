@@ -53,7 +53,9 @@ stages {
       }
  }
 }
-post {
+post {    // to send logs of the build in  email use below two lines ,edit job_name
+       //emailext attachLog: true, body: "${currentBuild.result}: ${BUILD_URL}", compressLog: true, replyTo: 'sumanthsainooka@gmail.com',
+       //subject: "Build Notification: ${JOB_NAME}-Build# ${BUILD_NUMBER} ${currentBuild.result}", to: 'sumanthsainooka@gmail.com'
         success {
             mail to:"sumanthsainooka@gmail.com", subject:"SUCCESS: ${currentBuild.fullDisplayName}", body: "Build success"
         }
