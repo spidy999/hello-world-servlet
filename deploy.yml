@@ -1,5 +1,5 @@
 ---
-- hosts: webservers
+- hosts: Webservers
   become: true
   tasks:
   - name: Stop Tomcat
