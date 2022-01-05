@@ -12,7 +12,7 @@ stages {
 
       // Get some code from a GitHub repository
 
-      git 'https://github.com/sumanthsainooka/hello-world-servlet.git'
+      git 'https://github.com/spidy999/hello-world-servlet.git'
       // Get the Maven tool.
      
  // ** NOTE: This 'M3' Maven tool must be configured
@@ -53,10 +53,10 @@ stages {
 }
 post {
         success {
-            mail to:"sumanthsainooka@gmail.com", subject:"SUCCESS: ${currentBuild.fullDisplayName}", body: "Build success"
+            mail to:"sunil.btch@gmail.com", subject:"SUCCESS: ${currentBuild.fullDisplayName}", body: "Build success"
         }
         failure {
-            mail to:"sumanthsainooka@gmail.com", subject:"FAILURE: ${currentBuild.fullDisplayName}", body: "Build failed"
+            mail to:"sunil.btch@gmail.com", subject:"FAILURE: ${currentBuild.fullDisplayName}", body: "Build failed"
         }
     }       
 }
